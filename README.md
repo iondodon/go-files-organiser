@@ -33,7 +33,7 @@ Contributions are welcome! Feel free to open an issue or create a pull request o
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/iondodon/go-files-organiser/blob/main/LICENSE.txt) file for details.
 
 ## Support
 
