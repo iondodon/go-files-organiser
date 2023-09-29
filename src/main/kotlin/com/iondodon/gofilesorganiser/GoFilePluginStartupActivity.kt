@@ -5,6 +5,7 @@ import com.intellij.openapi.project.Project
 import com.intellij.openapi.startup.StartupActivity
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
+import javax.swing.tree.DefaultMutableTreeNode
 import javax.swing.tree.TreePath
 
 class GoFilePluginStartupActivity : StartupActivity {
@@ -17,9 +18,10 @@ class GoFilePluginStartupActivity : StartupActivity {
             override fun mouseClicked(e: MouseEvent) {
                 if (e.clickCount == 2) {  // Detecting double-click
                     val path: TreePath = tree.getPathForLocation(e.x, e.y) ?: return
-                    val lastPathComponent = path.lastPathComponent
-                    if (lastPathComponent is GoFileGroupNode) {
-                        lastPathComponent.navigate(true)
+                    val lastPathComponent = path.lastPathComponent as? DefaultMutableTreeNode ?: return
+                    val userObject = lastPathComponent.userObject
+                    if (userObject is GoFileGroupNode) {
+                        userObject.navigate(true)
                         e.consume()  // Consume the event to prevent default double-click behavior
                     }
                 }
