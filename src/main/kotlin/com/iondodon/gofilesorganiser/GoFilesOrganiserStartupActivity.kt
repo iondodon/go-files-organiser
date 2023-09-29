@@ -8,7 +8,7 @@ import java.awt.event.MouseEvent
 import javax.swing.tree.DefaultMutableTreeNode
 import javax.swing.tree.TreePath
 
-class GoFilePluginStartupActivity : StartupActivity {
+class GoFilesOrganiserStartupActivity : StartupActivity {
 
     override fun runActivity(project: Project) {
         val projectView = ProjectView.getInstance(project)
