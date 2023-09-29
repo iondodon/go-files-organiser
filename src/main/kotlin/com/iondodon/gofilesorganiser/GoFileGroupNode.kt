@@ -5,6 +5,7 @@ import com.intellij.ide.projectView.ViewSettings
 import com.intellij.ide.projectView.impl.nodes.PsiFileNode
 import com.intellij.ide.util.treeView.AbstractTreeNode
 import com.intellij.openapi.fileEditor.OpenFileDescriptor
+import com.intellij.openapi.fileTypes.FileTypeManager
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.vcs.FileStatus
 import com.intellij.openapi.vfs.VirtualFile
@@ -28,7 +29,10 @@ class GoFileGroupNode(
 
     override fun update(data: PresentationData) {
         data.presentableText = baseFile.name
-        // Set your desired icon here
+
+        // Get the default icon for Go files
+        val goFileType = FileTypeManager.getInstance().getFileTypeByExtension("go")
+        data.setIcon(goFileType.icon)
     }
 
     override fun navigate(requestFocus: Boolean) {
