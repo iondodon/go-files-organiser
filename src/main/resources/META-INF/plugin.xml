@@ -14,9 +14,37 @@
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description>
+        <![CDATA[ <h1>Go Files Organiser Plugin for JetBrains IDEs</h1> ]]>
+
+        Enhance your Go development experience with Go Files Organiser, a specialized file explorer tailored for Go projects.
+        Our main feature focuses on grouping .go files with the same prefix, making it easier for you to manage and navigate through your codebase.
+
+        <![CDATA[ <br> ]]>
+
         This plugin is designed to improve the organization of Go files within the Project View of JetBrains IDEs.
         When there's a Go file named `x.go` and another file named `xy.go` in the same directory, `x.go` becomes an expandable node that contains `xy.go` as a child.
         This way, related Go files are grouped together under a common parent, making the project structure cleaner and easier to navigate.
+
+        <![CDATA[ <h1>Features</h1> ]]>
+
+        <![CDATA[
+            <ul>
+                <li>Groups related Go files together in the Project View</li>
+                <li>Allows easy navigation and management of Go files</li>
+            </ul>
+        ]]>
+
+        <![CDATA[ <h1>Contributing</h1> ]]>
+
+        Contributions are welcome! Feel free to open an issue or create a pull request on the  <![CDATA[ <a href="https://github.com/iondodon/go-files-organiser">GitHub repository</a> ]]>.
+
+        <![CDATA[ <h1>License</h1> ]]>
+
+        This project is licensed under the MIT License - see the <![CDATA[ <a href="https://github.com/iondodon/go-files-organiser/blob/main/LICENSE.txt">LICENSE</a> ]]> file for details.
+
+        <![CDATA[ <h1>Support</h1> ]]>
+
+        If you encounter any issues or have any questions, please open an issue on <![CDATA[ <a href="https://github.com/iondodon/go-project-explorer">GitHub</a> ]]>.
     </description>
 
     <!-- Product and plugin compatibility requirements.
