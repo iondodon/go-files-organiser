@@ -31,7 +31,7 @@ class GoFileGroupingProvider : TreeStructureProvider {
             }.mapNotNull { it.virtualFile }
 
             if (prefixedFiles.isNotEmpty()) {
-                result.add(GoFileGroupNode(node.project, prefixFile, prefixedFiles, settings))
+                result.add(GoFileGroupNode(node.project, node.getValue(), prefixedFiles, settings))
                 handledFiles.addAll(prefixedFiles)
                 handledFiles.add(prefixFile)
             } else {
