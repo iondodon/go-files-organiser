@@ -4,6 +4,8 @@ This plugin is designed to improve the organization of Go files within the Proje
 
 ## Features
 
+![Example](images/example.png)
+
 - Groups related Go files together in the Project View.
 - Allows easy navigation and management of Go files.
 
