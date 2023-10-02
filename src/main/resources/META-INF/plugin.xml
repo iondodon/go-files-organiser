@@ -19,17 +19,20 @@
         <h1>Go Files Organiser Plugin for JetBrains IDEs</h1>
 
         Enhance your Go development experience with Go Files Organiser, a specialized file explorer tailored for Go projects.
+        <br>
         Our main feature focuses on grouping .go files with the same prefix, making it easier for you to manage and navigate through your codebase.
 
         <br><br>
 
         This plugin is designed to improve the organization of Go files within the Project View of JetBrains IDEs.
+        <br>
         When there's a Go file named `x.go` and another file named `xy.go` in the same directory, `x.go` becomes an expandable node that contains `xy.go` as a child.
+        <br>
         This way, related Go files are grouped together under a common parent, making the project structure cleaner and easier to navigate.
 
         <h1>Features</h1>
 
-        <img src="https://github.com/iondodon/go-files-organiser/images/example.png" alt="Example">
+        <img src="https://github.com/iondodon/go-files-organiser/blob/main/images/example.png" alt="Example">
 
         <ul>
             <li>Groups related Go files together in the Project View</li>
