@@ -10,9 +10,9 @@ import com.intellij.psi.PsiManager
 
 class GoFileGroupNode(
     project: Project,
-    private val baseFile: PsiFile,
+    baseFile: PsiFile,
     private val prefixedFiles: List<VirtualFile>,
-    private val settings: ViewSettings?  // store settings as a field
+    private val settings: ViewSettings?
 ) : PsiFileNode(project, baseFile, settings) {
 
     override fun getChildrenImpl(): Collection<AbstractTreeNode<*>> {
