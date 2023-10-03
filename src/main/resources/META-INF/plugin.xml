@@ -32,8 +32,6 @@
 
         <h1>Features</h1>
 
-        <img src="https://github.com/iondodon/go-files-organiser/blob/main/images/example.png" alt="Example">
-
         <ul>
             <li>Groups related Go files together in the Project View</li>
             <li>Allows easy navigation and management of Go files</li>
